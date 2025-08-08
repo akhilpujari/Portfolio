@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  font-family: 'Netflix Sans',Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #141414;
+  color: white;
+}
+
+.profile {
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.6); /* dark shadow initially */
+  transition: box-shadow 0.3s ease-in-out;
+}
+.profile:hover {
+  box-shadow: 0 0 20px 5px rgb(245, 12, 12); /* red glow effect */
+}
+
+.profile-img {
+  width: 40px;     /* adjust as needed */
+  height: 40px;    /* same as width for perfect circle */
+  object-fit: cover;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.6); 
+}
+
+/* index.css */
+.navbar-blur {
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+.navbar-solid {
+  background-color: #000; /* or any solid color */
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+.spotlight-content{
+  left: 50px;
+  top: 40%;
+}
+
+.spotlight{
+  width: 100%;
+  height:530px;
+  object-fit: cover;
+}
+
+.spotlight {
+  filter: contrast(0.8) brightness(0.9);
+}
+
+.summary{
+  width: 75%;
+}
+
+@media (max-width:768px) {
+ .summary{
+  width: 700px;
+ }
+}
+
+@media (max-width:740px) {
+  .spotlight-content{
+    top: 30%;
+    left: 20px;
+  }
+  .spotlight{
+  width: 390px;
+  height: 700px;
+  object-fit: cover;
+}
+.summary{
+  width: 300px;
+}
+}
+
+.cardTitle {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 6px 12px;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+
+.horizontal-scroll {
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;        /* Firefox */
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+  display: none;                /* Chrome, Safari */
+}
+
+
+
+.my-card {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* dark shadow */
+  transition: box-shadow 0.3s ease;
+  border-radius: 8px; /* optional: matches rounded corners */
+  cursor: pointer;
+}
+
+
+.my-card img {
+  filter: contrast(0.8) brightness(0.9) blur(1px);
+}
+
+
+
+.my-card:hover {
+  box-shadow: 0 4px 20px rgba(255, 0, 0, 0.7); /* red shadow on hover */
+}
+
+.continue-watching{
+  margin-top: 70px;
+}
+
+.skills-container{
+  margin-top: 100px;
+}
+
