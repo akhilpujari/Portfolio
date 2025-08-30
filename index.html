@@ -6,6 +6,31 @@
     <link href="index.css" rel="stylesheet">
     <title>Portfolio</title>
   </head>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Netflix Sans', Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      background-color: #141414 !important;
+      color: white;
+    }
+
+    .profile {
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+      transition: box-shadow 0.3s ease-in-out;
+      width: 100px;
+      height: 100px;
+      margin: 20px;
+      background: #333;
+      border-radius: 8px;
+    }
+    .profile:hover {
+      box-shadow: 0 0 20px 5px rgb(245, 12, 12);
+    }
+
+    /* Other styles from your CSS here */
+  </style>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
