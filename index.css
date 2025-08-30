@@ -127,3 +127,14 @@ body {
   margin-top: 100px;
 }
 
+.card-skill {
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  /* border: 2px solid transparent; */
+}
+
+.card-skill:hover {
+  box-shadow: 0 8px 20px rgba(229, 9, 20, 0.6) !important; /* Netflix red glow */
+  border: 2px solid #e50914; /* Netflix red border */
+  transform: scale(1.05);
+}

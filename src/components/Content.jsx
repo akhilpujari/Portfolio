@@ -9,6 +9,8 @@ import reading from '../assets/reading.webp'
 import blogs from '../assets/blogs.jpg'
 import readme from '../assets/contactme.jpg'
 import { useParams } from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import resume from '../../svg/Sai_Ayyappa_Akhil_Pujari_RESUME.pdf'
 
 export default function Content(){
 
@@ -22,27 +24,33 @@ export default function Content(){
   const hotPicks = [
     {
       name : "Work Permit",
-      image : workPermit
+      image : workPermit,
+      path : "",
     },
     {
       name : "Skills",
-      image : skills
+      image : skills,
+      path : "/profile/skills",
     },
     {
       name : "Experience",
-      image : experience
+      image : experience,
+      path : ""
     },
     {
       name : "Certifications",
-      image : certifications
+      image : certifications,
+      path : ""
     },
     {
       name : "Projects",
-      image : projects
+      image : projects,
+      path : ""
     },
     {
       name : "Contact Me",
-      image : contactMe
+      image : contactMe,
+      path : ""
     }
   ]
 
@@ -81,10 +89,12 @@ export default function Content(){
                   <p className="summary my-4 fw-bold">
                     A passionate software developer focused on building responsive and intuitive web applications. Skilled in React, JavaScript, HTML, and CSS, with a growing interest in backend technologies. I love turning ideas into code and continuously improving my craft. Currently exploring full-stack development to become a more versatile engineer. I’m always eager to take on new challenges and contribute to meaningful, user-centered projects.
                   </p>
-                  <button className="btn btn-light me-4">
+                  <a href={resume} target="_blank" rel="noopener noreferrer">
+                    <button className="btn btn-light me-4">
                     <i className="bi bi-play-fill me-2"></i>
                     Resume
                   </button>
+                  </a>
                   <a href='https://www.linkedin.com/in/akhil-pujari' target="_blank" rel="noopener noreferrer">
                     <button className="btn btn-secondary">
                     <i className="bi bi-info-circle me-2"></i>
@@ -104,18 +114,19 @@ export default function Content(){
                 hotPicks.map((item,index) => {
                   return(
                     <>
-                 
+                 <Link to={item.path}>
                   <div className="position-relative my-card mb-3" key={index}>
-                    <img className="image-fluid rounded" 
-                    src={item.image}
-                    alt={item.name}
-                    style={{ width: "280px" , height : "200px"}}
-                    >
-                    </img>
-                    <div className="position-absolute cardTitle">
-                      <p className="fs-6 fw-bold mb-1">{item.name}</p>
-                    </div>
-                </div>
+                      <img className="image-fluid rounded" 
+                      src={item.image}
+                      alt={item.name}
+                      style={{ width: "280px" , height : "200px"}}
+                      >
+                      </img>
+                      <div className="position-absolute cardTitle">
+                        <p className="fs-6 fw-bold mb-1">{item.name}</p>
+                      </div>
+                  </div>
+                 </Link>
                
                     </>
                   )
