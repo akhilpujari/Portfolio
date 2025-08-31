@@ -61,7 +61,7 @@ export default function Navbar() {
               <li className="nav-item"><Link className="nav-link text-white" to="/browse">Home</Link></li>
               <li className="nav-item"><Link className="nav-link text-white" to="/profile/experience">Professional</Link></li>
               <li className="nav-item"><Link className="nav-link text-white" to="/profile/skills">Skills</Link></li>
-              <li className="nav-item"><Link className="nav-link text-white" to="/projects">Projects</Link></li>
+              <li className="nav-item"><Link className="nav-link text-white" to="/profile/projects">Projects</Link></li>
               <li className="nav-item"><Link className="nav-link text-white" to="/profile/contactme">Hire Me</Link></li>
             </ul>
 
