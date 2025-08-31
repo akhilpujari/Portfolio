@@ -1,0 +1,288 @@
+.reading-container {
+  background-color: #141414;
+  color: #fff;
+  min-height: 100vh;
+  padding-top: 20px;
+  font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Header Section */
+.reading-header {
+  padding: 50px 0;
+  text-align: center;
+  background: linear-gradient(to bottom, rgba(20, 20, 20, 0.9), rgba(20, 20, 20, 0.7));
+  margin-bottom: 30px;
+}
+
+.reading-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  color: #e50914;
+}
+
+.reading-subtitle {
+  font-size: 1.1rem;
+  color: #ddd;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* Books Grid */
+.reading-content {
+  padding: 40px 0;
+}
+
+.book-card {
+  background: #1a1a1a;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border: 1px solid #333;
+}
+
+.book-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.book-cover {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+
+.book-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.book-card:hover .book-cover img {
+  transform: scale(1.05);
+}
+
+.book-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.book-card:hover .book-overlay {
+  opacity: 1;
+}
+
+.btn-view {
+  background: #e50914;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.btn-view:hover {
+  background: #f40612;
+  transform: scale(1.05);
+}
+
+.book-status {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.status-badge {
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.status-badge.completed {
+  background: rgba(0, 204, 102, 0.2);
+  color: #00cc66;
+  border: 1px solid rgba(0, 204, 102, 0.3);
+}
+
+.status-badge.reading {
+  background: rgba(255, 204, 0, 0.2);
+  color: #ffcc00;
+  border: 1px solid rgba(255, 204, 0, 0.3);
+}
+
+.status-badge.planning-to-read {
+  background: rgba(102, 153, 255, 0.2);
+  color: #6699ff;
+  border: 1px solid rgba(102, 153, 255, 0.3);
+}
+
+.book-details {
+  padding: 18px;
+}
+
+.book-title {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #fff;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.book-author {
+  color: #e50914;
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.book-excerpt {
+  color: #bbb;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-bottom: 12px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.book-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 1px solid #333;
+}
+
+.book-category {
+  background: rgba(229, 9, 20, 0.15);
+  color: #e50914;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+/* Quotes Section */
+.quotes-section {
+  padding: 50px 0;
+  background: linear-gradient(to bottom, #1a1a1a 0%, #141414 100%);
+}
+
+.section-title {
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+  color: #e50914;
+  text-align: center;
+  font-weight: 600;
+}
+
+.quote-card {
+  background: rgba(30, 30, 30, 0.4);
+  padding: 25px;
+  border-radius: 8px;
+  height: 100%;
+  border-left: 3px solid #e50914;
+  transition: transform 0.3s;
+}
+
+.quote-card:hover {
+  transform: translateY(-3px);
+}
+
+.quote-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ddd;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.quote-author {
+  color: #e50914;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Reading Philosophy */
+.reading-philosophy {
+  padding: 50px 0;
+  background: linear-gradient(to bottom, #141414 0%, #1a1a1a 100%);
+}
+
+.philosophy-content {
+  background: rgba(30, 30, 30, 0.4);
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.philosophy-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ddd;
+  margin-bottom: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .reading-title {
+    font-size: 1.8rem;
+  }
+  
+  .reading-subtitle {
+    font-size: 1rem;
+  }
+  
+  .book-cover {
+    height: 200px;
+  }
+  
+  .section-title {
+    font-size: 1.4rem;
+  }
+  
+  .quote-card {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .reading-header {
+    padding: 40px 0;
+  }
+  
+  .reading-title {
+    font-size: 1.6rem;
+  }
+  
+  .book-details {
+    padding: 15px;
+  }
+  
+  .book-title {
+    font-size: 0.95rem;
+  }
+  
+  .book-excerpt {
+    font-size: 0.85rem;
+  }
+  
+  .philosophy-content {
+    padding: 20px;
+  }
+}

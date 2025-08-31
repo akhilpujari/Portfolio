@@ -1,0 +1,306 @@
+.gamer-container {
+  background-color: #141414;
+  color: #fff;
+  min-height: 100vh;
+  padding-top: 20px;
+  font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Featured Game with Video */
+.featured-game {
+  position: relative;
+  height: 70vh;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.featured-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translateX(-50%) translateY(-50%);
+  object-fit: cover;
+  filter: brightness(1);
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(20, 20, 20, 0.9) 0%, rgba(20, 20, 20, 0.4) 50%, rgba(20, 20, 20, 0.9) 100%);
+  z-index: 1;
+}
+
+.featured-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 60px;
+}
+
+.featured-badge {
+  display: inline-block;
+  background: #e50914;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.featured-game-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.featured-game-genre {
+  font-size: 1.3rem;
+  color: #e50914;
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+}
+
+.featured-meta {
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.meta-item {
+  color: #ddd;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+}
+
+.meta-divider {
+  color: #666;
+}
+
+.featured-description {
+  font-size: 1rem;
+  max-width: 500px;
+  margin-bottom: 1.5rem;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+/* Game Library */
+.game-library {
+  padding: 50px 0;
+  background: linear-gradient(to bottom, #1a1a1a 0%, #141414 100%);
+}
+
+.section-title {
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+  color: #e50914;
+  text-align: center;
+  font-weight: 600;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #aaa;
+  margin-bottom: 40px;
+  font-size: 0.95rem;
+}
+
+/* Games Grid */
+.games-grid {
+  margin-top: 20px;
+}
+
+.game-card {
+  background: #1a1a1a;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border: 1px solid #333;
+}
+
+.game-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.game-image {
+  position: relative;
+  height: 180px;
+  overflow: hidden;
+}
+
+.game-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.game-card:hover .game-image img {
+  transform: scale(1.05);
+}
+
+.game-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  padding: 12px;
+}
+
+.game-card:hover .game-overlay {
+  opacity: 1;
+}
+
+.game-platforms {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.platform-tag {
+  background: rgba(229, 9, 20, 0.2);
+  color: #e50914;
+  padding: 3px 8px;
+  border-radius: 10px;
+  font-size: 0.65rem;
+  border: 1px solid rgba(229, 9, 20, 0.3);
+  font-weight: 500;
+}
+
+.game-details {
+  padding: 16px;
+}
+
+.game-title {
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+  color: #fff;
+  line-height: 1.3;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.game-genre {
+  color: #e50914;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.game-meta {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.game-rating {
+  color: #ffcc00;
+  font-size: 0.8rem;
+}
+
+/* Gaming Philosophy */
+.gaming-philosophy {
+  padding: 60px 0;
+  background: linear-gradient(to bottom, #141414 0%, #1a1a1a 100%);
+}
+
+.philosophy-content {
+  background: rgba(30, 30, 30, 0.4);
+  padding: 30px;
+  border-radius: 8px;
+  border-left: 3px solid #e50914;
+}
+
+.philosophy-content p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #ddd;
+  margin-bottom: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .featured-game {
+    height: 60vh;
+  }
+  
+  .featured-game-title {
+    font-size: 1.8rem;
+  }
+  
+  .featured-game-genre {
+    font-size: 1.1rem;
+  }
+  
+  .featured-description {
+    font-size: 0.9rem;
+  }
+  
+  .section-title {
+    font-size: 1.4rem;
+  }
+  
+  .game-image {
+    height: 160px;
+  }
+}
+
+@media (max-width: 576px) {
+  .featured-game {
+    height: 50vh;
+  }
+  
+  .featured-content {
+    padding-top: 40px;
+  }
+  
+  .featured-game-title {
+    font-size: 1.5rem;
+  }
+  
+  .featured-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .meta-divider {
+    display: none;
+  }
+  
+  .philosophy-content {
+    padding: 20px;
+  }
+  
+  .game-card {
+    margin-bottom: 20px;
+  }
+}

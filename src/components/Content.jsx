@@ -3,7 +3,6 @@ import workPermit from '../assets/Work permit.jpeg'
 import  experience from '../assets/experience.webp'
 import  projects from '../assets/projects.jpg'
 import  contactMe from '../assets/contact me.webp'
-import  certifications from '../assets/certifications.webp'
 import music from '../assets/music.webp'
 import reading from '../assets/reading.webp'
 import blogs from '../assets/blogs.jpg'
@@ -18,14 +17,13 @@ export default function Content(){
     Recruiter : "https://media.giphy.com/media/DGwJRXVm6PmRa/200.gif",
     Developer : "https://media.tenor.com/LXpL4L2KuLIAAAAC/it-crowd.gif",
     Stalker : "https://i.gifer.com/7V7J.gif",
-    Gamer : "https://i.gifer.com/7V7J.gif"
   }
 
   const hotPicks = [
     {
       name : "Work Permit",
       image : workPermit,
-      path : "",
+      path : "/profile/workpermit",
     },
     {
       name : "Skills",
@@ -35,41 +33,40 @@ export default function Content(){
     {
       name : "Experience",
       image : experience,
-      path : ""
-    },
-    {
-      name : "Certifications",
-      image : certifications,
-      path : ""
+      path : "/profile/experience"
     },
     {
       name : "Projects",
       image : projects,
-      path : ""
+      path : "/profile/projects"
     },
     {
       name : "Contact Me",
       image : contactMe,
-      path : ""
+      path : '/profile/contactme'
     }
   ]
 
   const continueWatching = [
     {
       name : "Music",
-      image : music
+      image : music,
+      path : '/profile/music'
     },
     {
       name : "Reading",
-      image : reading
+      image : reading,
+      path :'/profile/reading'
     },
     {
       name : "Blogs",
-      image : blogs
+      image : blogs,
+      path : '/profile/blogs'
     },
     {
       name : 'Contact Me',
-      image : readme
+      image : readme,
+      path : '/profile/contactme'
     }
   ]
   const {type} = useParams();
@@ -81,7 +78,7 @@ export default function Content(){
         <>
            <div>
               <div className="position-relative">
-                <img src={spotImg} className="spotlight"></img>
+                <img src={spotImg || "https://media.tenor.com/LXpL4L2KuLIAAAAC/it-crowd.gif"} className="spotlight"></img>
                 <div className="position-absolute spotlight-content">
                   <h1>
                     Sai Ayyappa Akhil Pujari - Software Developer
@@ -143,7 +140,7 @@ export default function Content(){
                 continueWatching.map((item,index) => {
                   return(
                     <>
-                 
+                 <Link to={item.path}>
                   <div className="position-relative my-card mb-3" key={index}>
                     <img className="image-fluid rounded" 
                     src={item.image}
@@ -155,6 +152,7 @@ export default function Content(){
                       <p className="fs-6 fw-bold mb-1">{item.name}</p>
                     </div>
                 </div>
+                </Link>
                
                     </>
                   )

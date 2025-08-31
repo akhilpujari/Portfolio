@@ -11,6 +11,14 @@ import Navbar from './components/Navbar.jsx';
 import Content from './components/Content.jsx'
 import Intro from './Intro.jsx';
 import Skills from './components/Skills.jsx';
+import Experience from './components/Experience.jsx';
+import Blogs from './components/Blogs.jsx';
+import ContactMe from './components/ContactMe.jsx';
+import Reading from './components/Reading.jsx';
+import Music from './components/Music.jsx';
+import WorkPermit from './components/WorkPermit.jsx';
+import Projects from './components/Projects.jsx';
+import Gamer from './Gamer.jsx';
 
 const approuter = createBrowserRouter([
   {
@@ -29,6 +37,38 @@ const approuter = createBrowserRouter([
       {
         path:"skills",
         element:<Skills/>
+      },
+      {
+        path:"experience",
+        element:<Experience/>
+      },
+      {
+        path:"contactme",
+        element:<ContactMe/>
+      },
+      {
+        path:"music",
+        element:<Music/>
+      },
+      {
+        path:"reading",
+        element:<Reading/>
+      },
+      {
+        path:"blogs",
+        element :<Blogs/>
+      },
+      {
+        path:"workpermit",
+        element :<WorkPermit/>
+      },
+      {
+        path:"projects",
+        element :<Projects/>
+      },
+      {
+        path:"Gamer",
+        element :<Gamer/>
       },
       {
         path:":type",

@@ -59,16 +59,16 @@ export default function Navbar() {
           <div className="d-flex justify-content-between w-100 align-items-center">
             <ul className="navbar-nav d-flex align-items-center">
               <li className="nav-item"><Link className="nav-link text-white" to="/browse">Home</Link></li>
-              <li className="nav-item"><Link className="nav-link text-white" to="/features">Professional</Link></li>
+              <li className="nav-item"><Link className="nav-link text-white" to="/profile/experience">Professional</Link></li>
               <li className="nav-item"><Link className="nav-link text-white" to="/profile/skills">Skills</Link></li>
               <li className="nav-item"><Link className="nav-link text-white" to="/projects">Projects</Link></li>
-              <li className="nav-item"><Link className="nav-link text-white" to="/hire">Hire Me</Link></li>
+              <li className="nav-item"><Link className="nav-link text-white" to="/profile/contactme">Hire Me</Link></li>
             </ul>
 
             <div className="me-4">
               <Link to='/browse'>
                 <img 
-                src={brand} 
+                src={brand || developer} 
                 alt="Profile" 
                 className="rounded-circle profile-img"
                 style={{ width: "40px", height: "40px", objectFit: "cover" }}

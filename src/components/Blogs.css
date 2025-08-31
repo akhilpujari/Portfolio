@@ -1,0 +1,260 @@
+.netflix-blogs {
+  background-color: #141414;
+  color: #fff;
+  min-height: 100vh;
+  padding-top: 20px;
+}
+
+/* Header Section */
+.blogs-header {
+  padding: 40px 0 20px;
+  text-align: center;
+  background: linear-gradient(to bottom, #141414 0%, #1f1f1f 100%);
+}
+
+.main-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #e50914;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #aaa;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Featured Blog */
+.featured-blog {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.featured-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.featured-content {
+  z-index: 1;
+  width: 100%;
+}
+
+.featured-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.featured-excerpt {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.featured-meta {
+  margin-bottom: 1rem;
+}
+
+.bg-netflix {
+  background-color: #e50914 !important;
+}
+
+.btn-netflix {
+  background-color: #e50914;
+  border-color: #e50914;
+  color: white;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.btn-netflix:hover {
+  background-color: #f40612;
+  border-color: #f40612;
+  color: white;
+  transform: scale(1.05);
+}
+
+.featured-buttons .btn {
+  padding: 12px 30px;
+  border-radius: 4px;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+/* Blog Categories */
+.blog-categories {
+  padding: 40px 0;
+  background: linear-gradient(to bottom, #1f1f1f 0%, #141414 100%);
+}
+
+.category-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 40px 0 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e50914;
+  display: inline-block;
+}
+
+.blog-row {
+  display: flex;
+  overflow-x: auto;
+  padding: 20px 0;
+  gap: 20px;
+  scrollbar-width: none; /* Firefox */
+}
+
+.blog-row::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+.blog-card {
+  min-width: 280px;
+  background: #1f1f1f;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  flex-shrink: 0;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.blog-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.blog-image {
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.blog-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.blog-card:hover .blog-overlay {
+  opacity: 1;
+}
+
+.blog-info {
+  padding: 15px;
+}
+
+.blog-title {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.blog-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.blog-category {
+  color: #e50914;
+  font-weight: bold;
+}
+
+/* About Section */
+.about-section {
+  padding: 60px 0;
+  background-color: #1f1f1f;
+}
+
+.about-section h2 {
+  font-size: 2.5rem;
+  color: #e50914;
+  margin-bottom: 30px;
+}
+
+.about-content {
+  background: rgba(20, 20, 20, 0.7);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  color: #ddd;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 2.5rem;
+  }
+  
+  .featured-title {
+    font-size: 2rem;
+  }
+  
+  .featured-excerpt {
+    font-size: 1rem;
+  }
+  
+  .blog-image {
+    height: 140px;
+  }
+  
+  .blog-card {
+    min-width: 240px;
+  }
+  
+  .featured-buttons .btn {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+  }
+}
+
+/* Animation for cards */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.blog-card {
+  animation: fadeIn 0.6s ease-out;
+}
+
+.blog-card:nth-child(2) { animation-delay: 0.1s; }
+.blog-card:nth-child(3) { animation-delay: 0.2s; }
+.blog-card:nth-child(4) { animation-delay: 0.3s; }
+.blog-card:nth-child(5) { animation-delay: 0.4s; }

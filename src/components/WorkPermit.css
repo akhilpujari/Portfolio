@@ -1,0 +1,364 @@
+.work-permit-container {
+  background-color: #141414;
+  color: #fff;
+  min-height: 100vh;
+  padding-top: 20px;
+}
+
+/* Header Section */
+.work-permit-header {
+  padding: 60px 0;
+  text-align: center;
+  background: linear-gradient(to bottom, rgba(20, 20, 20, 0.9), rgba(20, 20, 20, 0.7)), 
+              url('https://images.unsplash.com/photo-1584697964358-3e14ca57658b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 30px;
+}
+
+.work-permit-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #e50914;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.work-permit-subtitle {
+  font-size: 1.3rem;
+  color: #ddd;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Main Content */
+.work-permit-content {
+  padding: 40px 0;
+}
+
+/* Info Cards */
+.info-card {
+  background: #1a1a1a;
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  border: 1px solid #333;
+  display: flex;
+  align-items: flex-start;
+}
+
+.info-card-icon {
+  margin-right: 20px;
+  font-size: 2.5rem;
+  color: #e50914;
+  flex-shrink: 0;
+}
+
+.info-card-content {
+  flex: 1;
+}
+
+.info-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #fff;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.info-card h3:after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #e50914;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* Location Details */
+.location-main {
+  margin-bottom: 15px;
+}
+
+.city {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e50914;
+}
+
+.country {
+  font-size: 1.2rem;
+  color: #bbb;
+  margin-left: 10px;
+}
+
+.location-description {
+  color: #ccc;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+/* Authorization Details */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 25px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.status-badge.authorized {
+  background: rgba(0, 204, 102, 0.15);
+  color: #00cc66;
+  border: 1px solid rgba(0, 204, 102, 0.3);
+}
+
+.status-badge i {
+  margin-right: 8px;
+}
+
+.authorization-list {
+  list-style: none;
+  padding: 0;
+}
+
+.authorization-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  color: #ddd;
+}
+
+.authorization-list i {
+  color: #00cc66;
+  margin-right: 10px;
+  font-size: 1.1rem;
+}
+
+/* Preferences Details */
+.preference-item {
+  margin-bottom: 25px;
+}
+
+.preference-item h4 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.preference-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.preference-option {
+  padding: 8px 15px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #444;
+  color: #ddd;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+}
+
+.preference-option.selected {
+  background: rgba(229, 9, 20, 0.2);
+  color: #e50914;
+  border-color: #e50914;
+}
+
+/* Map Section */
+.map-section {
+  margin: 50px 0;
+}
+
+.map-section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.map-container {
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.map-placeholder {
+  height: 300px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+              url('https://images.unsplash.com/photo-1584697964358-3e14ca57658b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ddd;
+  position: relative;
+}
+
+.map-placeholder i {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #e50914;
+}
+
+.map-overlay {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-align: right;
+}
+
+.map-overlay span {
+  display: block;
+}
+
+.map-overlay span:first-child {
+  color: #e50914;
+  font-weight: bold;
+}
+
+.location-facts {
+  background: #1a1a1a;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #333;
+}
+
+.location-facts h4 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.location-facts ul {
+  list-style: none;
+  padding: 0;
+}
+
+.location-facts li {
+  padding: 8px 0;
+  color: #ccc;
+  position: relative;
+  padding-left: 25px;
+}
+
+.location-facts li:before {
+  content: '•';
+  color: #e50914;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 0;
+  top: 3px;
+}
+
+/* Contact Card */
+.contact-card {
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-card .info-card-icon {
+  margin-right: 0;
+  margin-bottom: 15px;
+}
+
+.contact-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+/* Button Styles */
+.btn-netflix {
+  background-color: #e50914;
+  border-color: #e50914;
+  color: white;
+  font-weight: bold;
+  padding: 12px 25px;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.btn-netflix:hover {
+  background-color: #f40612;
+  border-color: #f40612;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(229, 9, 20, 0.4);
+}
+
+.btn-outline-light {
+  border: 2px solid #fff;
+  color: #fff;
+  font-weight: bold;
+  padding: 12px 25px;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.btn-outline-light:hover {
+  background-color: #fff;
+  color: #000;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .work-permit-title {
+    font-size: 2.5rem;
+  }
+  
+  .work-permit-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .info-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .info-card-icon {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  
+  .info-card h3:after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .preference-options {
+    justify-content: center;
+  }
+  
+  .contact-actions {
+    flex-direction: column;
+  }
+  
+  .contact-actions .btn {
+    width: 100%;
+  }
+  
+  .map-overlay {
+    bottom: 10px;
+    right: 10px;
+    padding: 8px 12px;
+  }
+}
