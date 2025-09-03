@@ -9,7 +9,7 @@ import blogs from '../assets/blogs.jpg'
 import readme from '../assets/contactme.jpg'
 import { useParams } from 'react-router-dom'
 import { Link } from 'react-router-dom'
-import resume from '../../svg/Sai_Ayyappa_Akhil_Pujari_RESUME.pdf'
+import resume from '../../svg/Sai Ayyappa Akhil Pujari_Resume.pdf'
 
 export default function Content(){
 

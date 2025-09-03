@@ -12,7 +12,7 @@ const Projects = () => {
       features: ["Drag & Drop UI", "Analytics Dashboard", "Job Application Tracking", "Success Rate Analysis"],
       category: "Full Stack",
       status: "Completed",
-      github: "https://github.com/akhilpujari/"
+      github: "https://github.com/akhilpujari/Ascent"
     },
     {
       id: 2,
