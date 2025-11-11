@@ -12,9 +12,6 @@ body {
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.6); /* dark shadow initially */
   transition: box-shadow 0.3s ease-in-out;
 }
-.profile:hover {
-  box-shadow: 0 0 20px 5px rgb(245, 12, 12); /* red glow effect */
-}
 
 .profile-img {
   width: 40px;     /* adjust as needed */

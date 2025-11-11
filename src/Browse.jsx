@@ -1,7 +1,7 @@
-import capibara from './assets/capibara.webp'
-import developer from './assets/developer.jpg'
+import capibara from './assets/recruiter.png'
+import developer from './assets/Devloper.png'
 import stalker from './assets/stalker.jpg'
-import gamer from './assets/gamer.png'
+import gamer from './assets/Gamer.jpg'
 import { Link } from 'react-router-dom'
 
 

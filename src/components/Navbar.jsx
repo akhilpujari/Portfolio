@@ -1,10 +1,10 @@
 import { Link, useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import Brand from '../assets/brand bg.png';
-import capibara from '../assets/capibara.webp'
-import developer from '../assets/developer.jpg'
+import capibara from '../assets/recruiter.png'
+import developer from '../assets/Devloper.png'
 import stalker from '../assets/stalker.jpg'
-import gamer from '../assets/gamer.png'
+import gamer from '../assets/Gamer.jpg'
 
 export default function Navbar() {
  const params = useParams();
